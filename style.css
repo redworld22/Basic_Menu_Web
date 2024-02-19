@@ -1,0 +1,55 @@
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #d3191b;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+#logo-container{
+    text-decoration: none;
+}
+a .logo{
+    height: 90px;
+    border-radius: 12px;
+}
+a .nombre-empresa{
+    margin-left: 12px;
+    font-size: 1.2rem;
+}
+nav{
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+}
+nav .nav-link:hover{
+    color: #979A97;
+}
+@media (max-width: 640px){
+    header{
+        flex-direction: column;
+    }
+    header #logo-container{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    nav{
+        justify-content: center;
+        margin: 12px 0;
+    }
+}
